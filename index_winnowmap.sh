@@ -8,7 +8,7 @@ the_k=15 ## why not 9-mers???
 
 ## mapping 15k mers??? IDK HOW TO CHECK WHA
 $winnow/meryl count k=$the_k output merylDB $in_fa
-$winnow/meryl print greater-than distinct=0.9998 merylDB > ${in_fa}.rep_k${the_k}.txt
+$winnow/meryl print greater-than distinct=0.9998 merylDB > ${in_fa}.rep_k${the_k}.cnts ## allofus research workbench doesnt allow .txt or .csv or .tsv files to be exported its crazy bro... 
 
 
 ## now you can supposedly align via
